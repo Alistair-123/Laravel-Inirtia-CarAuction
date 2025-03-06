@@ -32,7 +32,7 @@ const filteredCars = computed(() =>
           <div
             v-for="car in filteredCars"
             :key="car.id"
-            class="p-4 bg-white rounded shadow"
+            class="p-4 bg-blue-500 text-white rounded shadow"
           >
             <p><strong>Make:</strong> {{ car.make }}</p>
             <p><strong>Model:</strong> {{ car.model }}</p>

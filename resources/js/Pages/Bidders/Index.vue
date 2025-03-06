@@ -32,7 +32,7 @@ const filteredBidders = computed(() =>
         <div
           v-for="bidder in filteredBidders"
           :key="bidder.id"
-          class="p-4 mb-2 bg-white rounded shadow"
+          class="p-4 mb-2 bg-blue-500 rounded shadow text-white"
         >
           <p><strong>Name:</strong> {{ bidder.first_name }} {{ bidder.last_name }}</p>
           <p><strong>Address:</strong> {{ bidder.address }}</p>
