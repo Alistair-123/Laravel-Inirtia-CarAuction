@@ -12,8 +12,8 @@ defineProps({
 <template>
     <AppLayout>
       <h1 class="text-2xl font-bold">Welcome!</h1>
-      <p>Name: Your Name</p>
-      <p>Course: Your Course</p>
-      <p>Year: Your Year</p>
+      <p>Name: Alistair jan loberternos</p>
+      <p>Course: BSIT</p>
+      <p>Year: 3rd Year</p>
     </AppLayout>
   </template>
