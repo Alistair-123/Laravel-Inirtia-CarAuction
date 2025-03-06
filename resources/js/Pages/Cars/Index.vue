@@ -19,27 +19,27 @@ const filteredCars = computed(() =>
 </script>
 
 <template>
-  <AppLayout>
-    <div class="p-6">
-      <h1 class="text-2xl font-bold">Cars List</h1>
-      <input
-        type="text"
-        v-model="search"
-        placeholder="Search cars..."
-        class="mt-2 p-2 border rounded"
-      />
-      <div class="mt-4">
-        <div
-          v-for="car in filteredCars"
-          :key="car.id"
-          class="p-4 mb-2 bg-white rounded shadow"
-        >
-          <p><strong>Make:</strong> {{ car.make }}</p>
-          <p><strong>Model:</strong> {{ car.model }}</p>
-          <p><strong>Year:</strong> {{ car.year }}</p>
-          <p><strong>Miles:</strong> {{ car.miles }}</p>
+    <AppLayout>
+      <div class="p-6">
+        <h1 class="text-2xl font-bold">Cars List</h1>
+        <input
+          type="text"
+          v-model="search"
+          placeholder="Search cars..."
+          class="mt-2 p-2 border rounded"
+        />
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4">
+          <div
+            v-for="car in filteredCars"
+            :key="car.id"
+            class="p-4 bg-white rounded shadow"
+          >
+            <p><strong>Make:</strong> {{ car.make }}</p>
+            <p><strong>Model:</strong> {{ car.model }}</p>
+            <p><strong>Year:</strong> {{ car.year }}</p>
+            <p><strong>Miles:</strong> {{ car.miles }}</p>
+          </div>
         </div>
       </div>
-    </div>
-  </AppLayout>
-</template>
+    </AppLayout>
+  </template>
